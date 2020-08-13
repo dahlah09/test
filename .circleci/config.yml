@@ -3,7 +3,7 @@ jobs:
   compile:
    docker:
       - image: fadlyas/kernel_dockerfile:latest
-   resource_class : 2xlarge
+   resource_class : large
    steps:
       - run:
           command: |
