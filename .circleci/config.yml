@@ -2,17 +2,11 @@ version: 2.1
 jobs:
   compile:
    docker:
-      - image: fadlyas/kernel_dockerfile:latest
+      - image: ubuntu:18.04
    steps:
       - run:
           command: |
-           apt install default-jre -y
-           git config --global user.name "Busetdah"
-           git config --global user.email "apriantowpj@gmail.com"
-           git clone https://github.com/Busetdah/kernel_xiaomi_tissot --depth=1 tissot
-           cd tissot
-           chmod +x build.sh
-           ./build.sh
+           git clone https://github.com/akhilnarang/scripts
 workflows:
   version: 2.1
   cooking:
