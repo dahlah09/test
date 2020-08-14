@@ -3,11 +3,9 @@ jobs:
   compile:
    docker:
       - image: fadlyas/kernel_dockerfile:latest
-   resource_class : large
    steps:
       - run:
           command: |
-           git clone https://github.com/akhilnarang/scripts
 workflows:
   version: 2.1
   cooking:
