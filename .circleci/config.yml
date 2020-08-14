@@ -3,6 +3,13 @@ jobs:
   compile:
    docker:
       - image: fadlyas/kernel_dockerfile:latest
+   steps:
+      - run:
+          command: |
+           apt install default-jre -y
+           git config --global user.name "Busetdah"
+           git config --global user.email "apriantowpj@gmail.com"
+           git clone https://github.com/MASTERGUY/kernel_xiaomi_msm8953 kernel
 workflows:
   version: 2.1
   cooking:
