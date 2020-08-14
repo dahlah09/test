@@ -3,10 +3,6 @@ jobs:
   compile:
    docker:
       - image: fadlyas/kernel_dockerfile:latest
-   steps:
-      - run:
-          command: |
-          git clone https://github.com/MASTERGUY/kernel_xiaomi_msm8953
 workflows:
   version: 2.1
   cooking:
